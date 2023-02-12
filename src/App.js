@@ -1,15 +1,10 @@
 import "./App.css";
-
-import Header from "./header/Header";
-import Home from "./home/Home";
-
-
+import Contacts from "./components/contacts";
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Home/>
+     <Contacts/>
     </div>
   );
 }
