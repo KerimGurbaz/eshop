@@ -5,12 +5,13 @@ const initialFormValues = { fullname: "", phone_number: "" };
 const Form = ({ addContact, contacts }) => {
   const [form, setForm] = useState(initialFormValues);
 
-  const onChangeInput = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
   useEffect(() => {
     setForm(initialFormValues);
   }, [contacts]);
+
+  const onChangeInput = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -20,7 +21,6 @@ const Form = ({ addContact, contacts }) => {
     }
 
     addContact([...contacts, form]);
-    console.log(form);
   };
   return (
     <form onSubmit={onSubmit}>
