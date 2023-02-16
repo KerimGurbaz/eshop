@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import Form from "./components/contacts/Form";
 
 import List from "./components/contacts/List";
+import "/Users/kerimgurbaz/Desktop/my-react-projects/eshop/src/components/contacts/styles.css"
 
 function App() {
 
@@ -29,10 +30,12 @@ function App() {
   },[contacts])
 
   return (
-    <div>
- 
-     <List contacts={contacts}/>
+    <div className="App">
+<div id="container">
+  <h1>Contacts</h1>
+     <List contacts={contacts} />
      <Form addContact={setContacts} contacts={contacts}/>
+</div>
     </div>
   );
 }
