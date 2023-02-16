@@ -44,7 +44,7 @@ const Form = ({ addContact, contacts }) => {
         />
       </div>
 
-      <div className="">
+      <div className="btn">
         <button>Add</button>
       </div>
     </form>
