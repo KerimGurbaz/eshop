@@ -6,6 +6,7 @@ import Form from "./components/contacts/Form";
 
 import List from "./components/contacts/List";
 import "/Users/kerimgurbaz/Desktop/my-react-projects/eshop/src/components/contacts/styles.css"
+import User from "./components/User";
 
 function App() {
 
@@ -33,6 +34,8 @@ function App() {
     <div className="App">
 <div id="container">
   <h1>Contacts</h1>
+      <User/>
+      <br />
      <List contacts={contacts} />
      <Form addContact={setContacts} contacts={contacts}/>
 </div>
