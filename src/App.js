@@ -1,17 +1,12 @@
-import React from 'react'
-import ReactDOM from "react-dom/client";
- 
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import About from "./components/About";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <div>Hello world!</div>,
-  },
-]);
+import Users from "./components/Users";
+import Layout from "./components/Layout";
+import User from "./components/User";
+import Error404 from "./components/Error404";
+import Home from "./components/Home";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
