@@ -14,6 +14,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="home" element={<Home />}>
+            
+             </Route>
+          <Route path="about" element={<About />}>
+
       
 const App = () => {
   return (
