@@ -18,13 +18,13 @@ function App() {
              </Route>
           <Route path="about" element={<About />}>
 
-      
-const App = () => {
-  return (
-    <div>
-
-    </div>
-  )
+     </Route>
+          <Route path="users/*" element={<Users />}>
+            <Route path="user/:name/:id" element={<User />}></Route>
+          </Route>
+          <Route path="*" element={<Error404 />}></Route>
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
-
-export default App
