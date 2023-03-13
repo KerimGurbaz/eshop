@@ -8,11 +8,13 @@ import User from "./components/User";
 import Error404 from "./components/Error404";
 import Home from "./components/Home";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
-);
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route path="home" element={<Home />}>
+      
 const App = () => {
   return (
     <div>
